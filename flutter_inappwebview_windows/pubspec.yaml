@@ -1,6 +1,7 @@
 name: flutter_inappwebview_windows
 description: Windows implementation of the flutter_inappwebview plugin.
 version: 0.7.0-beta.3
+publish_to: none
 homepage: https://inappwebview.dev/
 repository: https://github.com/pichillilorenzo/flutter_inappwebview/tree/master/flutter_inappwebview_windows
 issue_tracker: https://github.com/pichillilorenzo/flutter_inappwebview/issues
@@ -20,8 +21,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_inappwebview_platform_interface: #^1.4.0-beta.3
-    path: ../flutter_inappwebview_platform_interface
+  flutter_inappwebview_platform_interface:
+    git:
+      url: https://github.com/Arctuition/arc_flutter_inappwebview.git
+      path: flutter_inappwebview_platform_interface
+      ref: arcsite-6.2.0-beta.3
 
 dev_dependencies:
   flutter_test:

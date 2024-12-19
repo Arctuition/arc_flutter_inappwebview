@@ -234,8 +234,8 @@ class InAppWebViewWebElement implements Disposable {
           iframe.referrerPolicy;
       iframe.name = settings!.iframeName ?? iframe.name;
       iframe.csp = settings!.iframeCsp ?? iframe.csp;
-      iframe.role = settings!.iframeRole ?? iframe.role;
-      iframe.ariaHidden = settings!.iframeAriaHidden ?? iframe.ariaHidden;
+      // iframe.role = settings!.iframeRole ?? iframe.role;
+      // iframe.ariaHidden = settings!.iframeAriaHidden ?? iframe.ariaHidden;
 
       if (settings!.iframeSandbox != null &&
           settings!.iframeSandbox != Sandbox.ALLOW_ALL) {
@@ -477,10 +477,10 @@ class InAppWebViewWebElement implements Disposable {
       iframe.csp = newSettings.iframeCsp;
     }
     if (settings!.iframeRole != newSettings.iframeRole) {
-      iframe.role = newSettings.iframeRole;
+      // iframe.role = newSettings.iframeRole;
     }
     if (settings!.iframeAriaHidden != newSettings.iframeAriaHidden) {
-      iframe.ariaHidden = newSettings.iframeAriaHidden;
+      // iframe.ariaHidden = newSettings.iframeAriaHidden;
     }
 
     if (settings!.iframeSandbox != newSettings.iframeSandbox) {
